@@ -1,0 +1,383 @@
+/* 
+Theme Name: Hello Elementor Child
+Theme URI: https://github.com/elementor/hello-theme-child/
+Description: Hello Elementor Child is a child theme of Hello Elementor, created by Elementor team
+Author: Elementor Team
+Author URI: https://elementor.com/
+Template: hello-elementor
+Version: 2.0.0
+Text Domain: hello-elementor-child
+License: GNU General Public License v3 or later.
+License URI: https://www.gnu.org/licenses/gpl-3.0.html
+Tags: flexible-header, custom-colors, custom-menu, custom-logo, editor-style, featured-images, rtl-language-support, threaded-comments, translation-ready
+*/
+
+/* Add your custom styles here */
+:root {
+  --font-family: 'Syne', sans-serif; 
+  --text-white: #ffffff;
+  --text-black: #00000f;
+  --custom-header-accent: #DC9F96; 
+  --custom-header-hover: #C02E44;
+  --custom-green: #3B8E46;
+  --custom-title-pink: #D2776A;
+  --custom-button: #E0B9B4;  
+  --background-pink: #ECE2DA;
+  --background-border-pink: #E3D9D0;  
+    max-width: 1440px; 
+    margin-left: auto;
+    margin-right: auto;
+}
+#site-header > div{
+  max-width: 1440px;
+}
+/* footer */
+.footer_link_container {   
+	  display: flex;
+	  justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: var(--text-black);
+}
+
+/* header */
+.site-header .header-inner .custom-logo-link{
+    display: flex;
+    flex-direction: row;       
+    margin-left: 20px;
+    max-width: 200px;
+    align-items: center;   
+}
+.site-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-block-start: 0rem; 
+    padding-block-end: 0rem; 
+    
+}
+.site-navigation ul.menu li a {
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    
+    
+  }
+/* bouton commande */
+.commander a{
+    background-color: #dc9f96; 
+    padding: 20px;
+    color:white;         
+    text-align: center;  
+    margin: auto;
+    font-weight: 600; 
+  }
+  a{
+    color: var(--text-black);
+    font-weight: 600;
+  }
+
+  
+  /* banniere */
+  .banniere-titre{
+    height: 300px;    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;    
+    text-transform: uppercase;
+}
+
+h2{
+  font-size: 6rem;
+}
+<<<<<<< HEAD
+h4 {
+  font-family: 'Syne', sans-serif;
+  margin: 0;
+  font-size: 20px;
+  font-weight: 800;
+}
+=======
+>>>>>>> parent of 0685928 (v1.06 boucle foreach page commande et correction)
+
+.banniere-titre .titre{
+    position: relative;
+    z-index: 2;
+    margin: 0;
+    padding: 10px 20px;
+    text-align: center;    
+}
+
+<<<<<<< HEAD
+.wpforms-submit-container{
+  text-align: center;
+  padding-left: 35px;
+}
+.wpforms-submit.bouton_form_nous_contacter{
+  margin-top: -35px;  
+}
+#wpforms-submit-353.wpforms-submit.bouton_form_nous_contacter{
+    padding-left: 45px;
+    padding-right: 45px;
+}  
+#wpforms-form-353 > div.wpforms-field-container input{
+  padding-left: 50px;
+  padding-right: 50px;
+}
+/* page commander */
+.big_title {
+  font-size: 46px;
+  font-weight: 800;
+  text-align: center;
+  color: white;
+  font-family: 'syne', sans-serif;
+}
+hr.separateur_title{
+  margin-top: 60px;
+  margin-bottom: 40px;
+}
+.small_title{
+  font-size: 30px;
+  font-weight: 700;
+  color: white;
+  font-family: 'syne', sans-serif;
+  margin-bottom: 30px;
+}
+hr.separateur_form{
+  margin-top: 80px;
+  margin-bottom: 40px;
+}
+.container {
+  display: inline-block;
+  position: relative;
+  margin: 5px;
+  padding: 5px;
+}
+.test{
+  font-size: 25px;
+  font-weight: 800;
+}
+
+.container .test {
+  
+  position: absolute;  
+  margin: 0;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  color: white ;
+  
+}
+label{
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+#products{
+  display: flex;
+}
+input.quantity{
+  display: block;
+  margin: 0  auto;
+  width: 50px;
+  height: 45px;
+  padding: 0px 5px;
+  text-align: right;
+  
+   
+}
+input[type=number]{
+  padding: 0;
+}
+input[type=text]{
+  padding: 1.5rem 1rem;
+}
+input[type=email]{
+  padding: 1.5rem 1rem;
+}
+.elementor-widget-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+
+}
+
+ form .form_main{
+=======
+/* formulaire de la page commander */
+
+form {
+>>>>>>> parent of 0685928 (v1.06 boucle foreach page commande et correction)
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+<<<<<<< HEAD
+hr.colonne{
+  position: absolute;
+  transform: rotate(90deg);
+  transform-origin: left;
+  border: 1px solid #ffffff;
+  width: 25%;
+  top: 25%;
+  left: 50%;
+
+}
+#form_info{
+    display: flex;
+    gap: 75px;
+    position: relative;
+}
+.form_left{
+  width: 50%;	
+	margin: 0;  
+  color: var(--text-white);
+ 
+}
+ 
+.form_right {
+  width: 50%;	
+	margin: 0;
+  color: var(--text-white);	
+}
+input.bouton_cmd{
+  background-color: var(--custom-button);
+  color: white;
+  border: none;
+  padding: 15px 40px;
+  margin: 0 auto;
+  display: block;
+}
+.elementor img {
+  height: 128px;
+  width: 193px;
+  border: none;
+  border-radius: 0;
+  box-shadow: none; 
+=======
+
+label,
+input {
+  
+  margin-bottom: 10px;
+  color: var(--text-white);
+}
+
+label {
+  font-weight: bold;
+}
+
+input {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+input[type="submit"] {
+  background-color: var(--custom-button);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;  
+}
+
+.form-group .colonne{
+  margin-right: 10px;
+  position: relative;
+  column-count: 2;
+}
+.form-group:before{
+  content: "";
+  border-right: 1px solid #ccc;
+>>>>>>> parent of 0685928 (v1.06 boucle foreach page commande et correction)
+}
+
+@media screen and (max-width: 1024px) {
+h1 .big_title{
+  font-size: 25px;
+  font-weight: 800;
+  text-align: center;
+  color: white;
+  font-family: 'syne', sans-serif;
+}
+}
+
+@media screen and (max-width: 767.98px){
+  .elementor-10 .elementor-element.elementor-element-a6ec79b h1.big_title{
+  font-size: 25px;
+  font-weight: 800;
+  text-align: center;
+  color: white;
+  font-family: 'syne', sans-serif;
+}
+.elementor-10 .elementor-element.elementor-element-a6ec79b h3.small_title{
+  font-size: 25px;
+  font-weight: 700;
+  text-align: center;
+  color: white;
+  font-family: 'syne', sans-serif;
+  margin-bottom: 30px;
+}
+.elementor-10 .elementor-element.elementor-element-a6ec79b .container{
+  left: 23%;
+}
+.elementor-10 .elementor-element.elementor-element-a6ec79b input.quantity {
+  text-align: center;
+  width: 35px;
+  height: 45px;
+  top: 35%;
+  transform: translateX(-129px);
+  vertical-align: bottom;
+}
+.elementor-10 .elementor-element.elementor-element-a6ec79b .form_left {
+  width: 100%;  
+  margin: 0;
+  color: var(--text-white);
+  margin-bottom: 130px;
+}
+.elementor-10 .elementor-element.elementor-element-a6ec79b .form_right {
+  width: 100%;  
+  margin: 0;
+  color: var(--text-white);
+  margin-bottom: 130px;
+}
+.elementor-10 .elementor-element.elementor-element-a6ec79b input[type=text]{
+  padding: 1.5rem 1rem;
+  width: 89%;
+  margin-left: 20px;
+}
+.elementor-10 .elementor-element.elementor-element-a6ec79b input[type=email]{
+  padding: 1.5rem 1rem;
+  width: 89%;
+  margin-left: 20px;
+}
+.elementor-10 .elementor-element.elementor-element-a6ec79b label{
+  padding-left: 20px;
+}
+.elementor-10 .elementor-element.elementor-element-a6ec79b input.bouton_cmd {
+  position: absolute;
+  top: 95%;
+  left: 30.5%;
+  background-color: var(--custom-button);
+  color: white;
+  border: none;
+  padding: 15px 40px;
+}
+.elementor-10 .elementor-element.elementor-element-a6ec79b hr.colonne {
+  position: absolute;  
+  border: 1px solid #ffffff;
+  transform: rotate(0deg);
+  width: 75%;
+  top: 69%;
+  left: 12.5%;
+}
+}
