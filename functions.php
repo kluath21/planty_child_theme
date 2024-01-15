@@ -103,10 +103,9 @@ function hstngr_register_widget() {
     );
     }
     public function widget( $args, $instance ) {
-<<<<<<< HEAD
         // var_dump(get_posts());
         ?> 
-        <form class="form_main" method="post">
+        <form class="form_main" method="post" action="mail.php">
             <h1 class="big_title">COMMANDER</h1>
                 <hr class="separateur_title">
             <h3 class="small_title">Votre commande</h3>  
@@ -152,53 +151,10 @@ function hstngr_register_widget() {
                     </div>        
                           
                 </div>  
-                    <input class="bouton_cmd" href="planty.drinks@gmail.com" type="submit" value="Commander">  
-        </form>
-        
+                    <input class="bouton_cmd" type="submit" value="Commander">  
+        </form>        
         <?php
-    }  
-=======
-    // $title = apply_filters( 'widget_title', $instance['title'] );
-
-    echo $args['before_widget'];
-    //if title is present
-    if ( ! empty( $title ) )
-    echo $args['before_title'] . $title . $args['after_title'];
-    //output
-    include('form.php'); 
-    echo __( 'Hello, World from Patrice', 'hstngr_widget_domain' );
-    echo $args['after_widget'];
-    
-    }    
-    public function form( $instance ) {
-    if ( isset( $instance[ 'title' ] ) )
-    $title = $instance[ 'title' ];
-    else
-    $title = __( 'Default Title', 'hstngr_widget_domain' );
-    ?>
-    <p>
-    <!-- <label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php _e( 'Title:' ); ?></label>
-    <input class="widefat" id="<?php echo $this->get_field_id( 'title' ); ?>" name="<?php echo $this->get_field_name( 'title' ); ?>" type="text" value="<?php echo esc_attr( $title ); ?>" /> -->
-
-    <form method="post" action="form.php">
-    <label for="fraise">Fraise :</label>
-    <input type="number" id="fraise" name="fraise" min="0" max="100" value="0"><br>
-
-    <label for="pamplemousse">Pamplemousse :</label>
-    <input type="number" id="pamplemousse" name="pamplemousse" min="0" max="100" value="0"><br>
-
-    <label for="framboise">Framboise :</label>
-    <input type="number" id="framboise" name="framboise" min="0" max="100" value="0"><br>
-
-    <label for="citron">Citron :</label>
-    <input type="number" id="citron" name="citron" min="0" max="100" value="0"><br>
-
-    <input type="submit" value="Commander">
-    </form>
-
-    </p>
-    <?php
->>>>>>> parent of 0685928 (v1.06 boucle foreach page commande et correction)
+     
     }
     public function update( $new_instance, $old_instance ) {
     $instance = array();

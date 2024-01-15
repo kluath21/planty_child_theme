@@ -23,13 +23,8 @@ Tags: flexible-header, custom-colors, custom-menu, custom-logo, editor-style, fe
   --custom-title-pink: #D2776A;
   --custom-button: #E0B9B4;  
   --background-pink: #ECE2DA;
-  --background-border-pink: #E3D9D0;  
-    max-width: 1440px; 
-    margin-left: auto;
-    margin-right: auto;
-}
-#site-header > div{
-  max-width: 1440px;
+  --background-border-pink: #E3D9D0;
+  max-width: 100%;
 }
 /* footer */
 .footer_link_container {   
@@ -56,6 +51,12 @@ Tags: flexible-header, custom-colors, custom-menu, custom-logo, editor-style, fe
     padding-block-end: 0rem; 
     
 }
+.site-header .header-inner{
+    margin-left: 0px;
+    margin-right: 0px;
+    max-width: 100%;
+}
+
 .site-navigation ul.menu li a {
     display: block;
     padding-top: 20px;
@@ -97,15 +98,12 @@ Tags: flexible-header, custom-colors, custom-menu, custom-logo, editor-style, fe
 h2{
   font-size: 6rem;
 }
-<<<<<<< HEAD
 h4 {
   font-family: 'Syne', sans-serif;
   margin: 0;
   font-size: 20px;
   font-weight: 800;
 }
-=======
->>>>>>> parent of 0685928 (v1.06 boucle foreach page commande et correction)
 
 .banniere-titre .titre{
     position: relative;
@@ -115,7 +113,6 @@ h4 {
     text-align: center;    
 }
 
-<<<<<<< HEAD
 .wpforms-submit-container{
   text-align: center;
   padding-left: 35px;
@@ -211,17 +208,10 @@ input[type=email]{
 }
 
  form .form_main{
-=======
-/* formulaire de la page commander */
-
-form {
->>>>>>> parent of 0685928 (v1.06 boucle foreach page commande et correction)
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
+  gap: 15px;
+  width: 100%;
 }
-<<<<<<< HEAD
 hr.colonne{
   position: absolute;
   transform: rotate(90deg);
@@ -263,42 +253,6 @@ input.bouton_cmd{
   border: none;
   border-radius: 0;
   box-shadow: none; 
-=======
-
-label,
-input {
-  
-  margin-bottom: 10px;
-  color: var(--text-white);
-}
-
-label {
-  font-weight: bold;
-}
-
-input {
-  padding: 5px;
-  border: 1px solid #ccc;
-  border-radius: 3px;
-}
-
-input[type="submit"] {
-  background-color: var(--custom-button);
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;  
-}
-
-.form-group .colonne{
-  margin-right: 10px;
-  position: relative;
-  column-count: 2;
-}
-.form-group:before{
-  content: "";
-  border-right: 1px solid #ccc;
->>>>>>> parent of 0685928 (v1.06 boucle foreach page commande et correction)
 }
 
 @media screen and (max-width: 1024px) {
