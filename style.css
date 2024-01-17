@@ -121,8 +121,9 @@ h4 {
   margin-top: -35px;  
 }
 #wpforms-submit-353.wpforms-submit.bouton_form_nous_contacter{
-    padding-left: 45px;
-    padding-right: 45px;
+  margin-top: 15px;
+  padding-left: 45px;
+  padding-right: 45px;
 }  
 #wpforms-form-353 > div.wpforms-field-container input{
   padding-left: 50px;
@@ -185,7 +186,7 @@ input.quantity{
   width: 50px;
   height: 45px;
   padding: 0px 5px;
-  text-align: right;
+  text-align: center;
   
    
 }
@@ -217,8 +218,8 @@ hr.colonne{
   transform: rotate(90deg);
   transform-origin: left;
   border: 1px solid #ffffff;
-  width: 25%;
-  top: 25%;
+  width: 50%;
+  top: 2%;
   left: 50%;
 
 }
@@ -230,10 +231,8 @@ hr.colonne{
 .form_left{
   width: 50%;	
 	margin: 0;  
-  color: var(--text-white);
- 
-}
- 
+  color: var(--text-white); 
+} 
 .form_right {
   width: 50%;	
 	margin: 0;
@@ -246,6 +245,7 @@ input.bouton_cmd{
   padding: 15px 40px;
   margin: 0 auto;
   display: block;
+  
 }
 .elementor img {
   height: 128px;
@@ -281,28 +281,37 @@ h1 .big_title{
   font-family: 'syne', sans-serif;
   margin-bottom: 30px;
 }
-.elementor-10 .elementor-element.elementor-element-a6ec79b .container{
-  left: 23%;
-}
+#products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  }
+
 .elementor-10 .elementor-element.elementor-element-a6ec79b input.quantity {
-  text-align: center;
-  width: 35px;
+  display: block;
+  margin: 0 auto;
+  width: 50px;
   height: 45px;
-  top: 35%;
-  transform: translateX(-129px);
-  vertical-align: bottom;
+  padding: 0px 5px;
+  text-align: right;
+  margin-bottom: 20px;
+  margin-top: -5px;
+}
+#form_info{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;  
+  gap: 10;
 }
 .elementor-10 .elementor-element.elementor-element-a6ec79b .form_left {
-  width: 100%;  
-  margin: 0;
+  width: 90%;  
+  margin: 0;  
   color: var(--text-white);
-  margin-bottom: 130px;
 }
 .elementor-10 .elementor-element.elementor-element-a6ec79b .form_right {
-  width: 100%;  
+  width: 90%;  
   margin: 0;
-  color: var(--text-white);
-  margin-bottom: 130px;
+  color: var(--text-white);	
 }
 .elementor-10 .elementor-element.elementor-element-a6ec79b input[type=text]{
   padding: 1.5rem 1rem;
@@ -318,20 +327,39 @@ h1 .big_title{
   padding-left: 20px;
 }
 .elementor-10 .elementor-element.elementor-element-a6ec79b input.bouton_cmd {
-  position: absolute;
-  top: 95%;
-  left: 30.5%;
   background-color: var(--custom-button);
   color: white;
   border: none;
   padding: 15px 40px;
+  margin: 0 auto;
+  display: block;
+}
+.elementor-10 .elementor-element.elementor-element-a6ec79b hr.separateur_title{
+  width: 70%;
+  transform: translate(23%, 10%);
+  margin-top: 60px;
+  margin-bottom: 40px;
+  border: 1px solid #ffffff;
+}
+.elementor-10 .elementor-element.elementor-element-a6ec79b hr.separateur_form {
+  width: 70%;
+  transform: translate(23%, 10%);
+  margin-top: 40px;
+  margin-bottom: 40px;
+  border: 1px solid #ffffff;
 }
 .elementor-10 .elementor-element.elementor-element-a6ec79b hr.colonne {
-  position: absolute;  
+  position: absolute;
+  transform: none;
+  transform-origin: left;
   border: 1px solid #ffffff;
-  transform: rotate(0deg);
-  width: 75%;
-  top: 69%;
-  left: 12.5%;
+  width: 70%;
+  top: 50%;
+  left: 15%;
+}
+ div.wpforms-submit-container#wpforms-submit-353.wpforms-submit.bouton_form_nous_contacter {
+  margin-top: 20px;
+  padding-left: 45px;
+  padding-right: 45px;
 }
 }
