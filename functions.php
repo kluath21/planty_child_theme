@@ -49,41 +49,6 @@ function add_extra_item_to_nav_menu( $items, $args ) {
 
     return $items;
 }
-
-/* SHORTCODES */
-
-
-// Je dis à wordpress que j'ajoute un shortcode 'banniere-titre'
-add_shortcode('banniere-titre', 'banniere_titre_func');
-// Je génère le html retourné par mon shortcode
-function banniere_titre_func($atts)
-{
-    //Je récupère les attributs mis sur le shortcode
-    $atts = shortcode_atts(array(
-        'src' => '',
-        'titre' => 'Titre'
-    ), $atts, 'banniere-titre');
-
-    //Je commence à récupéré le flux d'information
-    ob_start();
-
-    if ($atts['src'] != "") {
-        ?>
-
-        <div class="banniere-titre" style="background-image: url(<?= $atts['src'] ?>)">
-            <h2 class="titre"><?= $atts['titre'] ?></h2>
-        </div>
-
-        <?php
-    }
-
-    //J'arrête de récupérer le flux d'information et le stock dans la fonction $output
-    $output = ob_get_contents();
-    ob_end_clean();
-
-    return $output;
-} 
-
 function hstngr_register_widget() {
     register_widget( 'hstngr_widget' );
     }
