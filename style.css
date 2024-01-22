@@ -164,6 +164,8 @@ label{
 }
 #products{
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 input.quantity{
   display: block;
@@ -250,6 +252,27 @@ h1 .big_title{
 }
 #wpforms-submit-353.wpforms-submit.bouton_form_nous_contacter:hover{
   background-color:#C02E44 ;
+}
+.elementor-10 .elementor-element.elementor-element-a6ec79b .form_left {
+  width: 50%;  
+  margin: 0;  
+  color: var(--text-white);
+  padding-left: 20px;
+}
+.elementor-10 .elementor-element.elementor-element-a6ec79b .form_right {
+  width: 50%;  
+  margin: 0;
+  color: var(--text-white);	
+  padding-right: 20px;
+}
+.elementor-10 .elementor-element.elementor-element-a6ec79b hr.colonne {
+  position: absolute;
+  transform: rotate(90deg);
+  transform-origin: left;
+  border: 1px solid #ffffff;
+  width: 48%;
+  top: 0%;
+  left: 50%;
 }
 }
 

@@ -41,7 +41,7 @@ function add_extra_item_to_nav_menu( $items, $args ) {
 	if (is_user_logged_in ()) {
        
         $itemsToArray = explode("</li>", $items);
-       $arrayElements = count($itemsToArray);
+        $arrayElements = count($itemsToArray);
         array_splice($itemsToArray, $arrayElements - 2, 0, '<li id="menu-item-412" class="menu-admin-class"><a href=' . admin_url() . '>Admin</a></li>');
           
         $items = implode("</li>", $itemsToArray);
